@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRUST. Training Program — Programas</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0a;font-family:'DM Sans',sans-serif;color:#fff;min-height:100vh}
+  .wrap{max-width:480px;margin:0 auto;padding:2rem 1rem}
+  .logo{text-align:center;margin-bottom:.25rem}
+  .logo span{font-family:'Bebas Neue',sans-serif;font-size:52px;letter-spacing:6px;color:#fff}
+  .sub{text-align:center;font-size:11px;letter-spacing:3px;color:#555;text-transform:uppercase;margin-bottom:.25rem}
+  .tag{text-align:center;font-size:12px;color:#444;margin-bottom:2.5rem}
+  .sec{font-size:11px;letter-spacing:4px;color:#444;text-transform:uppercase;margin:0 0 1rem;padding-bottom:.5rem;border-bottom:.5px solid #1e1e1e}
+  .card{background:#111;border:.5px solid #222;border-radius:12px;padding:1.5rem;margin-bottom:1rem;position:relative}
+  .card.feat{border-color:#fff}
+  .card.soon{opacity:.7}
+  .badge{position:absolute;top:1rem;right:1rem;font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;padding:3px 10px;border-radius:20px}
+  .badge-w{background:#fff;color:#000}
+  .badge-s{background:#222;color:#666;border:.5px solid #333}
+  .cn{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:3px;color:#fff;margin:0 0 .25rem}
+  .cs{font-size:13px;color:#555;margin:0 0 1.25rem;line-height:1.5}
+  .pb{display:flex;align-items:baseline;gap:.5rem;margin-bottom:.2rem}
+  .pm{font-family:'Bebas Neue',sans-serif;font-size:40px;color:#fff;line-height:1}
+  .pu{font-size:12px;color:#555;letter-spacing:1px}
+  .pn{font-size:11px;color:#3a3a3a;margin-bottom:1.25rem}
+  .btn-more{width:100%;background:transparent;border:.5px solid #2a2a2a;border-radius:8px;color:#666;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:.75rem;font-family:'DM Sans',sans-serif;transition:border-color .2s,color .2s}
+  .btn-more:hover{border-color:#444;color:#aaa}
+  .arrow{transition:transform .3s;display:inline-block}
+  .btn-more.open .arrow{transform:rotate(180deg)}
+  .btn-prox{width:100%;background:transparent;border:.5px solid #2a2a2a;border-radius:8px;color:#444;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px;cursor:default;font-family:'DM Sans',sans-serif}
+  .exp{display:none;border-top:.5px solid #1a1a1a;margin-top:.75rem;padding-top:1rem}
+  .exp.open{display:block}
+  .et{font-size:10px;letter-spacing:3px;color:#444;text-transform:uppercase;margin:0 0 .75rem}
+  .feats{list-style:none;padding:0;margin:0 0 1.25rem}
+  .feats li{font-size:13px;color:#777;padding:6px 0;display:flex;align-items:flex-start;gap:8px;border-bottom:.5px solid #161616;line-height:1.4}
+  .feats li:last-child{border-bottom:none}
+  .feats li .ic{color:#444;flex-shrink:0;margin-top:1px}
+  .feats li.hl{color:#ccc}
+  .feats li.hl .ic{color:#fff}
+  .enote{background:#0d0d0d;border:.5px solid #1a1a1a;border-radius:6px;padding:.75rem 1rem;font-size:12px;color:#444;line-height:1.6;margin-bottom:1.25rem}
+  .enote strong{color:#666;font-weight:500}
+  .stages{display:flex;gap:8px;margin-bottom:1.25rem}
+  .stage{flex:1;background:#0d0d0d;border:.5px solid #1a1a1a;border-radius:8px;padding:.75rem;text-align:center}
+  .stage-label{font-size:9px;letter-spacing:2px;color:#444;text-transform:uppercase;margin-bottom:4px}
+  .stage-name{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:#777}
+  .stage-arrow{font-size:18px;color:#333;display:flex;align-items:center;padding-top:1.5rem}
+  .btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-size:13px;font-weight:500;padding:12px;border-radius:8px;text-decoration:none;transition:opacity .2s}
+  .btn-wa:hover{opacity:.85}
+  .btn-wa svg{width:17px;height:17px;fill:#fff;flex-shrink:0}
+  hr.div{border:none;border-top:.5px solid #1a1a1a;margin:2rem 0}
+  .stop{display:flex;align-items:center;gap:8px;font-size:12px;color:#444}
+  .sdot{width:6px;height:6px;border-radius:50%;background:#333;flex-shrink:0}
+  .sdot.fin{background:#fff}
+  .sline{width:.5px;height:14px;background:#222;margin-left:2.5px}
+  .footer{text-align:center;font-size:10px;color:#2a2a2a;letter-spacing:2px;text-transform:uppercase;padding-top:1rem;padding-bottom:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo"><span>TRUST.</span></div>
+  <p class="sub">Training Program</p>
+  <p class="tag">Entrenamos atletas para competir · CrossFit · Hyrox · Híbrido</p>
+
+  <p class="sec">Programas activos</p>
+
+  <!-- COMPETE -->
+  <div class="card feat">
+    <span class="badge badge-w">Más popular</span>
+    <p class="cn">Compete</p>
+    <p class="cs">CrossFit / Functional Fitness — preparación específica para el calendario nacional de competencias.</p>
+    <div class="pb"><span class="pm">Bs. 450</span><span class="pu">/ trimestre</span></div>
+    <p class="pn">Bs. 150 / mes · Pago único o 2 cuotas de Bs. 225</p>
+    <button class="btn-more" onclick="toggle('compete')">¿Querés saber más? <span class="arrow">↓</span></button>
+    <div class="exp" id="exp-compete">
+      <p class="et">¿Qué incluye?</p>
+      <ul class="feats">
+        <li class="hl"><span class="ic">✓</span>Programación semanal de CrossFit / Functional Fitness</li>
+        <li class="hl"><span class="ic">✓</span>Preparación específica por competencia (Altitude, Hyrock, Llajta, BFC)</li>
+        <li class="hl"><span class="ic">✓</span>Switch a prep específica 1 mes antes de cada competencia</li>
+        <li><span class="ic">—</span>100% Online · Mínimo 3 meses</li>
+        <li><span class="ic">—</span>Ideal para atletas con base sólida en CrossFit que quieren competir</li>
+      </ul>
+      <p class="et">La temporada 2026/27</p>
+      <div style="padding:.5rem 0 1rem">
+        <div class="stop"><div class="sdot"></div><span>Altitude Games — La Paz · Agosto 7/8</span></div>
+        <div class="sline"></div>
+        <div class="stop"><div class="sdot"></div><span>Hyrock — Santa Cruz · Octubre 17/18</span></div>
+        <div class="sline"></div>
+        <div class="stop"><div class="sdot"></div><span>Llajta Games — Cochabamba · Noviembre</span></div>
+        <div class="sline"></div>
+        <div class="stop"><div class="sdot"></div><span>CrossFit Open · Feb/Mar 2027</span></div>
+        <div class="sline"></div>
+        <div class="stop"><div class="sdot fin"></div><span style="color:#fff">BFC — Destino final · Mayo 2027</span></div>
+      </div>
+      <a class="btn-wa" href="https://wa.me/59176818420?text=Hola%2C%20quiero%20unirme%20al%20programa%20COMPETE" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero unirme a Compete
+      </a>
+    </div>
+  </div>
+
+  <!-- MOVE FOR YOU -->
+  <div class="card">
+    <p class="cn">Move For You</p>
+    <p class="cs">Plan 100% personalizado para tu objetivo — cualquier deporte, cualquier meta.</p>
+    <div class="pb"><span class="pm">Bs. 500</span><span class="pu">/ mes</span></div>
+    <p class="pn">Plan trimestral: Bs. 1,200 pago único · Ahorrás Bs. 300</p>
+    <button class="btn-more" onclick="toggle('move')">¿Querés saber más? <span class="arrow">↓</span></button>
+    <div class="exp" id="exp-move">
+      <p class="et">¿Qué incluye?</p>
+      <ul class="feats">
+        <li class="hl"><span class="ic">✓</span>Programación 100% individualizada</li>
+        <li class="hl"><span class="ic">✓</span>Adaptada a tu objetivo, nivel y disponibilidad</li>
+        <li><span class="ic">—</span>Cualquier deporte o meta personal</li>
+        <li><span class="ic">—</span>Seguimiento y ajustes continuos</li>
+        <li><span class="ic">—</span>100% Online</li>
+      </ul>
+      <p class="et">¿Para quién es?</p>
+      <div class="enote">Para atletas que quieren una programación <strong>hecha a medida</strong>. Si querés dar ese salto de escaleta avanzado en CrossFit, mejorar en tu deporte o alcanzar un objetivo específico — y estás dispuesto a invertir un poco más en tu preparación — este es tu plan ideal.</div>
+      <a class="btn-wa" href="https://wa.me/59176818420?text=Hola%2C%20quiero%20información%20sobre%20Move%20For%20You" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero saber más
+      </a>
+    </div>
+  </div>
+
+  <!-- BOX PROGRAMMING -->
+  <div class="card">
+    <p class="cn">Box Programming</p>
+    <p class="cs">Programación grupal para tu box — CrossFit, Hyrox, híbrido o funcional.</p>
+    <div class="pb"><span class="pm">Bs. 500</span><span class="pu">/ mes</span></div>
+    <p class="pn">Contratación mensual · Para boxes y gimnasios</p>
+    <button class="btn-more" onclick="toggle('box')">¿Querés saber más? <span class="arrow">↓</span></button>
+    <div class="exp" id="exp-box">
+      <p class="et">¿Qué incluye?</p>
+      <ul class="feats">
+        <li class="hl"><span class="ic">✓</span>Programación de clases grupales</li>
+        <li class="hl"><span class="ic">✓</span>CrossFit · Hyrox · Híbrido · Funcional</li>
+        <li><span class="ic">—</span>Planificación entregada cada domingo, una semana por adelantado</li>
+        <li><span class="ic">—</span>Ajustes y soporte incluidos</li>
+        <li><span class="ic">—</span>Adaptada al nivel y equipamiento de tu box</li>
+      </ul>
+      <p class="et">¿Para quién es?</p>
+      <div class="enote">Para <strong>dueños y coaches de boxes</strong> que quieren clases grupales de calidad sin dedicar tiempo a la planificación. Nosotros programamos, vos enseñás.</div>
+      <a class="btn-wa" href="https://wa.me/59176818420?text=Hola%2C%20quiero%20información%20sobre%20Box%20Programming" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quiero programar mi box
+      </a>
+    </div>
+  </div>
+
+  <!-- HYROX PRÓXIMAMENTE -->
+  <div class="card soon">
+    <span class="badge badge-s">Próximamente</span>
+    <p class="cn">Hyrox · Híbrido</p>
+    <p class="cs">Preparación específica para competencias Hyrox y formato híbrido.</p>
+    <div class="pb"><span class="pm" style="color:#555">Bs. —</span></div>
+    <p class="pn" style="color:#2a2a2a">Precio próximamente</p>
+    <button class="btn-more" onclick="toggle('hyrox')">Ver más información <span class="arrow">↓</span></button>
+    <div class="exp" id="exp-hyrox">
+      <p class="et">¿De qué se trata?</p>
+      <div class="enote">Un programa diseñado para llevarte lo mejor posible a <strong>Hyrock y competencias Hyrox</strong>. Dos etapas de preparación que se adaptan al calendario.</div>
+      <p class="et">Las dos etapas</p>
+      <div class="stages">
+        <div class="stage">
+          <div class="stage-label">Etapa 1</div>
+          <div class="stage-name">BASE</div>
+          <div style="font-size:11px;color:#444;margin-top:6px;line-height:1.4">Mejora todas las capacidades que requiere el deporte</div>
+        </div>
+        <div class="stage-arrow">→</div>
+        <div class="stage">
+          <div class="stage-label">Etapa 2</div>
+          <div class="stage-name" style="color:#999">RENDIMIENTO</div>
+          <div style="font-size:11px;color:#444;margin-top:6px;line-height:1.4">Puesta a punto previa a la competencia</div>
+        </div>
+      </div>
+      <button class="btn-prox">Próximamente</button>
+    </div>
+  </div>
+
+  <hr class="div">
+  <p class="footer">trust.training.program · 100% online · +591 768 18420</p>
+
+</div>
+
+<script>
+function toggle(id){
+  var exp=document.getElementById('exp-'+id);
+  var btn=exp.previousElementSibling;
+  var isOpen=exp.classList.contains('open');
+  document.querySelectorAll('.exp').forEach(function(e){e.classList.remove('open')});
+  document.querySelectorAll('.btn-more').forEach(function(b){b.classList.remove('open')});
+  if(!isOpen){exp.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
